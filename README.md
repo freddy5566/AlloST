@@ -1,8 +1,17 @@
-## Official Implementation of AlloST: Low-resource Speech Translation without Source Transcription
+### Official Implementation of AlloST: Low-resource Speech Translation without Source Transcription
+
+This repository includes the implementation of the INTERSPEECH 2021 paper:
+
+**AlloST: Low-resource Speech Translation without Source Transcription**
 
 ### Dependency:
   1. [ESPnet](https://github.com/espnet/espnet): please follow the instruction to install ESPnet
   2. [Allosaurus](https://github.com/xinjli/allosaurus): `pip install allosaurus`
+
+### How to run:
+  1. Install dependencies
+  2. cd to `egs/fisher_callhome/st1`
+  3. bash `the_experiment_you_want_to_run`
 
 ### Results
 
@@ -22,3 +31,15 @@
 | Encoder Fusion + Decoder Fusion w/ BPE 32k | 29.19 | **31.05** | **30.30** |
 | Encoder Fusion + Decoder Fusion w/ BPE 48k | 29.37 | 30.26 | 29.70 |
 | Encoder Fusion + Decoder Fusion w/ BPE 64k | 29.44 | 30.73 | 29.12 |
+
+### Citation:
+If you want to publish experimental results with our idea, please cite the following articles:
+
+<pre>
+@misc{2105.00171,
+Author = {Yao-Fei Cheng and Hung-Shin Lee and Hsin-Min Wang},
+Title = {AlloST: Low-resource Speech Translation without Source Transcription},
+Year = {2021},
+Eprint = {arXiv:2105.00171},
+}
+</pre>
